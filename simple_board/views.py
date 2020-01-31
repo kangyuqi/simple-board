@@ -8,7 +8,7 @@ from simple_board.models import Message
 from simple_board.forms import BoardForm
 
 
-@app.route('/', method=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     messages = Message.query.order_by(Message.timestamp.desc()).all()  # 加载所有的记录
     form = BoardForm()

@@ -1,0 +1,2 @@
+FLASK_APP=simple_board
+FLASK_ENV=development

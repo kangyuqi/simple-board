@@ -1,10 +1,15 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from simple_board import views, errors, commands
+from flask_bootstrap import Bootstrap
+from flask_moment import Moment
 
-app = Flask('board')
+app = Flask('simple_board')
 app.config.from_pyfile('settings.py')
 app.jinja_env.trim_blocks = True
 app.jinja_env.lstrip_blocks = True
 
 db = SQLAlchemy(app)
+bootstrap = Bootstrap(app)
+moment = Moment(app)
+
+from simple_board import views, errors, commands
