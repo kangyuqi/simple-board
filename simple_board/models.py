@@ -2,6 +2,7 @@
 数据库模型
 """
 from datetime import datetime
+
 from simple_board import db
 
 
