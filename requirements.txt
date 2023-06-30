@@ -7,4 +7,4 @@ Faker==4.0.0
 Flask_WTF==0.14.2
 Flask==1.1.1
 flask_bootstrap==3.3.7.1
-pipreqs==0.4.10
+pipreqs==0.4.12
